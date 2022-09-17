@@ -1,0 +1,59 @@
+<!--
+Name:     Luke Martin
+Class:    CPSC 332 - Web Dev
+Semester: Fall 2022
+Project:  Homework 1
+Desc:     The file contains a basic HTML page
+          meant to serve as an introduction to 
+          web development.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Luke Martin - Web Development</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+
+    <script>
+        function changePhoto1() {
+            let x = document.getElementById("LightningPhoto")
+            x.src = "lightning-mcqueen.png"
+            x.alt = "Lightning McQueen"
+        }
+
+        function changePhoto2() {
+            let x = document.getElementById("LightningPhoto")
+            x.src = "mcqueen-crocs.jpg"
+            x.alt = "Lightning McQueen crocs"
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Homework 1</h1>
+    <p>I am excited to take web development this semester. From everyone that I have 
+        talked to, it seems that a <strong><emphasis>large</emphasis></strong> 
+        majority of CS jobs are directly related to web 
+        development. Although I don't know if I <emphasis>actually</emphasis>
+        want to go straight into industry after I graduate, I think it is important 
+        to have a basic understanding of how websites and web apps are created for 
+        an education in computer science.
+    </p>
+    <p>
+        <img id="LightningPhoto" src="mcqueen-crocs.jpg" alt="Lightning McQueen crocs" width="800"><br>
+        Shown above is a picture of some of the coolest footwear on 
+        the market, the Lightning McQueen crocs. Further information can be found
+        in an article published by 
+        <a href="https://www.thewrap.com/lightning-mcqueen-crocs-sold-out/" target="_blank">The Wrap</a>.
+    </p>
+    <p>
+        <button type="button" onclick="changePhoto1()">Click to release Lightning from his vessel of imprisonment!</button>
+        <button type="button" onclick="changePhoto2()">Click to reincarcerate Lightning!</button>
+    </p>
+</body>
+</html>
